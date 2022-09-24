@@ -30,8 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - run: mogrify -resize 40% media/*.webp
-      - run: gzip -k -9 -r *
+      - run: ls -lsa
+      - run: pwd
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
