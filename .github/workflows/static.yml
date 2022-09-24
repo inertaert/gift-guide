@@ -33,10 +33,9 @@ jobs:
       - run: ls -lsa
       - run: pwd
       - run: mkdir .public
-      - run: cp -r guide/* .public
+      - run: cp -r * .public
       - run: mogrify -resize 40% .public/media/*.webp
       - run: gzip -k -9 -r .public
-      - run: mv .public public
       - run: ls -lsa
       - run: pwd
       - name: Setup Pages
@@ -45,7 +44,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'public'
+          path: '.public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
