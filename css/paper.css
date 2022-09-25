@@ -1438,7 +1438,8 @@ table.table-alternating tbody tr:nth-of-type(even) {
 
 .alert-warning {
   color: #41403e;
-  color: var(--warning-text);
+  /*color: var(--warning-text);*/
+  color: var(--primary-text);
   background-color: #41403e;
   background-color: var(--warning-light);
   border-color: #41403e;
