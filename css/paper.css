@@ -1358,10 +1358,11 @@ table.table-alternating tbody tr:nth-of-type(even) {
 .alert {
   border-color: #41403e;
   border-color: var(--primary);
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
+  /* This strips out the papery borders for alert boxes */
+  /*border-bottom-left-radius: 15px 255px;*/
+  /*border-bottom-right-radius: 225px 15px;*/
+  /*border-top-left-radius: 255px 15px;*/
+  /*border-top-right-radius: 15px 225px;*/
   border-style: solid;
   border-width: 2px;
   margin-bottom: 20px;
@@ -3019,6 +3020,18 @@ fieldset.form-group {
   display: block;
 }
 .tabs input[id$=tab5]:checked ~ div[id$=content5] {
+  display: block;
+}
+.tabs input[id$=tab6]:checked ~ div[id$=content6] {
+  display: block;
+}
+.tabs input[id$=tab7]:checked ~ div[id$=content7] {
+  display: block;
+}
+.tabs input[id$=tab8]:checked ~ div[id$=content8] {
+  display: block;
+}
+.tabs input[id$=tab9]:checked ~ div[id$=content9] {
   display: block;
 }
 .tabs label {

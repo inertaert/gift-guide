@@ -23,62 +23,135 @@ article {
     background-color: white;
 }
 
-/* Add more spacing between unordered list list items for readability*/
-/*ul li {*/
-/*    padding: 0.3rem 0;*/
-/*}*/
-
 /* Fix for graphical bug */
-
 ul li p {
     display:inline;
 }
 
-/* Overwrites paper.css default web fonts */
-/* Now hard-patched into paper.css */
+/* Add-on of paper-y border for alert boxes, stripped out of main paper.css file */
+._alert_paper_border {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
 
-/*button,*/
-/*input,*/
-/*optgroup,*/
-/*select,*/
-/*textarea {*/
-/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
-/*    font-size: 100%;*/
-/*    line-height: 1.15;*/
-/*    margin: 0;*/
-/*}*/
+/* Custom tabs implementation, copied and renamed from paper.css */
 
-/*html {*/
-/*    color: #41403e;*/
-/*    color: var(--primary);*/
-/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
-/*    font-size: 20px;*/
-/*}*/
+.integration_tabs .content {
+  display: none;
+  flex-basis: 100%;
+  padding: 0.75rem 0 0;
+}
+.integration_tabs input {
+  display: none;
+}
+.integration_tabs input:checked + label {
+  color: #41403e;
+  color: var(--primary);
+  border-bottom-color: #41403e;
+  border-bottom-color: var(--secondary);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+.integration_tabs input[id$=int_tab1]:checked ~ div[id$=int_content1] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab2]:checked ~ div[id$=int_content2] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab3]:checked ~ div[id$=int_content3] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab4]:checked ~ div[id$=int_content4] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab5]:checked ~ div[id$=int_content5] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab6]:checked ~ div[id$=int_content6] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab7]:checked ~ div[id$=int_content7] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab8]:checked ~ div[id$=int_content8] {
+  display: block;
+}
+.integration_tabs input[id$=int_tab9]:checked ~ div[id$=int_content9] {
+  display: block;
+}
+.integration_tabs label {
+  color: #41403e;
+  color: var(--primary-light);
+  display: inline-block;
+  font-weight: 600;
+  margin: 0 0 -1px;
+  padding: 0.75rem;
+  text-align: center;
+}
+.integration_tabs label:hover {
+  color: #41403e;
+  color: var(--muted);
+  cursor: pointer;
+}
 
+/**/
 
-/*p,*/
-/*a,*/
-/*button,*/
-/*li,*/
-/*table,*/
-/*thead,*/
-/*tbody,*/
-/*th,*/
-/*tr,*/
-/*td,*/
-/*input,*/
-/*textarea,*/
-/*select,*/
-/*option {*/
-/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
-/*}*/
-
-/*h1,*/
-/*h2,*/
-/*h3,*/
-/*h4,*/
-/*h5,*/
-/*h6 {*/
-/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
-/*    font-weight: normal;*/
-/*}*/
+.game_tabs .content {
+  display: none;
+  flex-basis: 100%;
+  padding: 0.75rem 0 0;
+}
+.game_tabs input {
+  display: none;
+}
+.game_tabs input:checked + label {
+  color: #41403e;
+  color: var(--primary);
+  border-bottom-color: #41403e;
+  border-bottom-color: var(--secondary);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+.game_tabs input[id$=game_tab1]:checked ~ div[id$=game_content1] {
+  display: block;
+}
+.game_tabs input[id$=game_tab2]:checked ~ div[id$=game_content2] {
+  display: block;
+}
+.game_tabs input[id$=game_tab3]:checked ~ div[id$=game_content3] {
+  display: block;
+}
+.game_tabs input[id$=game_tab4]:checked ~ div[id$=game_content4] {
+  display: block;
+}
+.game_tabs input[id$=game_tab5]:checked ~ div[id$=game_content5] {
+  display: block;
+}
+.game_tabs input[id$=game_tab6]:checked ~ div[id$=game_content6] {
+  display: block;
+}
+.game_tabs input[id$=game_tab7]:checked ~ div[id$=game_content7] {
+  display: block;
+}
+.game_tabs input[id$=game_tab8]:checked ~ div[id$=game_content8] {
+  display: block;
+}
+.game_tabs input[id$=game_tab9]:checked ~ div[id$=game_content9] {
+  display: block;
+}
+.game_tabs label {
+  color: #41403e;
+  color: var(--primary-light);
+  display: inline-block;
+  font-weight: 600;
+  margin: 0 0 -1px;
+  padding: 0.75rem;
+  text-align: center;
+}
+.game_tabs label:hover {
+  color: #41403e;
+  color: var(--muted);
+  cursor: pointer;
+}

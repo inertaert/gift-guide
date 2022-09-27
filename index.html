@@ -8,7 +8,7 @@
           content="Game Interface For Toys (GIFT) connects your real-life IoT sex toys with your PC and activates them automatically during gameplay in Skyrim and Fallout 4.">
     <link rel="stylesheet" href="css/paper.min.css">
     <link rel="stylesheet" href="css/custom.min.css">
-    <title>Game Interface For Toys</title>
+    <title>Game Interface For Toys—Skyrim & Fallout 4 meets teledildonics</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <article class="article">
         <h1 class="article-title margin-top-none margin-bottom-none">Game Interface For Toys
         </h1>
-        <p><strong>Game Interface For Toys</strong> by <a
+        <p><strong><abbr title="Game Interface For Toys">GIFT</abbr></strong> by <a
                 href="https://www.loverslab.com/topic/191448-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">Min</a>
             connects your real-life <abbr title="Internet of Things">IoT</abbr> sex
             toys with your
@@ -37,9 +37,10 @@
                     href="https://www.dungeon-lab.com/e-stim-unit.php">DG-Lab Coyote</a></strong>.
         </p>
         <p>
-            Download the latest version <span class="badge secondary">alpha 3</span> from <a
+            Download the latest version <span class="badge secondary">Alpha 4</span> from <a
                 href="https://github.com/MinLL/GameInterfaceForToys">GitHub</a> [<a
-                href="https://github.com/MinLL/GameInterfaceForToys/archive/refs/heads/master.zip">direct download</a>] or
+                href="https://github.com/MinLL/GameInterfaceForToys/archive/refs/heads/master.zip">direct download</a>]
+            or
             <a href="https://www.loverslab.com/files/file/22380-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">LoversLab</a>.
         </p>
     </article>
@@ -103,7 +104,7 @@
             </div>
         </div>
         <p class="border border-6 shadow shadow-hover padding-large margin-left-large margin-right-large margin-top-none margin-bottom-large _white_background">
-            Game Interface For Toys speaks fluent <a href="https://www.chaster.app">Chaster</a>. Raid
+            <strong>GIFT</strong> speaks fluent <a href="https://www.chaster.app">Chaster</a>. Raid
             dungeons
             to reduce or
             extend your
@@ -179,12 +180,13 @@
             </li>
         </ul>
 
-        <p class="alert alert-warning">Game Interface For Toys is in alpha stage. Features may not
+        <p class="alert alert-warning _alert_paper_border"><strong>GIFT</strong> is in alpha stage. Features may not
             work, or work poorly.
         </p>
 
-        <p class="alert alert-secondary">Help us add support for your favourite device or mod on <strong><a
-                href="https://github.com/MinLL/GameInterfaceForToys">GitHub</a></strong> or on the
+        <p class="alert alert-secondary _alert_paper_border">Help us add support for your favourite device or mod on
+            <strong><a
+                    href="https://github.com/MinLL/GameInterfaceForToys">GitHub</a></strong> or on the
             <strong><a
                     href="https://www.loverslab.com/topic/191448-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">LoversLab</a></strong>
             forum!
@@ -235,7 +237,7 @@
         </ul>
 
         <h4 id="download" class="margin-bottom-small">Download</h4>
-        <p>Game Interface For Toys <span class="badge secondary">alpha 3</span> can be downloaded from <a
+        <p><strong>GIFT</strong> <span class="badge secondary">Alpha 4</span> can be downloaded from <a
                 href="https://github.com/MinLL/SkyrimToyInterface">GitHub</a> [<a
                 href="https://github.com/MinLL/SkyrimToyInterface/archive/refs/heads/master.zip">direct download</a>]
             or <a
@@ -244,75 +246,113 @@
 
         <h4 id="installation" class="margin-bottom-small">How to install</h4>
 
-        <p class="alert alert-warning"><strong>Note:</strong> Installation of Game Interface For Toys will become much
+        <p class="alert alert-warning"><strong>Note:</strong> Installation of <strong>GIFT</strong> will become much
             simpler in future versions, we promise.</p>
 
-        <p>The following steps need to be completed no matter which toy integration you intend to use afterwards.</p>
+        <p class="text-center margin-top-large"><strong>Choose your game:</strong></p>
 
-        <ol>
-            <li>
-                <p>Download and install <abbr title="Interpreter for the Python programming language">Python</abbr>
-                    (version 3.7 or later?) on your machine. Python is available for free here: <a
-                            href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>.
+        <div class="row flex-spaces game_tabs">
+            <input id="game_tab1" type="radio" name="game_tabs" checked>
+            <label for="game_tab1">Skyrim (LE)</label>
+
+            <input id="game_tab2" type="radio" name="game_tabs">
+            <label for="game_tab2">Skyrim (SE, AE, VR)</label>
+
+            <input id="game_tab3" type="radio" name="game_tabs">
+            <label for="game_tab3">Fallout 4</label>
+
+            <!-- Skyrim LE -->
+            <div class="content container container-lg" id="game_content1">
+                <p>
+                    <span class="badge warning">todo</span>
+                    Skyrim Legendary Edition
                 </p>
-            </li>
-            <li>
-                <p>Download Game Interface For Toys from <a
-                        href="https://github.com/MinLL/SkyrimToyInterface">GitHub</a> [<a
-                        href="https://github.com/MinLL/SkyrimToyInterface/archive/refs/heads/master.zip">direct download
-                    link</a>]
-                    or
-                    <a href="https://www.loverslab.com/topic/191448-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">LoversLab</a>
-                    and extract the ZIP file to a folder. The unzipped contents should look like this:
-                </p>
-                <pre><code>.
+
+
+                <!--        <p>The following steps need to be completed no matter which toy integration you intend to use afterwards.</p>-->
+
+                <ol>
+                    <li>
+                        <p>Download and install <abbr
+                                title="Interpreter for the Python programming language">Python</abbr>
+                            (version 3.7 or later?) on your machine. Python is available for free here: <a
+                                    href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Download <strong>GIFT</strong> from <a
+                                href="https://github.com/MinLL/SkyrimToyInterface">GitHub</a> [<a
+                                href="https://github.com/MinLL/SkyrimToyInterface/archive/refs/heads/master.zip">direct
+                            download
+                            link</a>]
+                            or
+                            <a href="https://www.loverslab.com/topic/191448-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">LoversLab</a>
+                            and extract the ZIP file to a folder. The unzipped contents should look like this:
+                        </p>
+                        <pre><code>.
 ├── common
-│...
+│   ├── ...
+├── GameInterfaceForToys.py
+├── games
+│   ├── fallout4
+│   │   └── dd
+│   │       └── Scripts
+│   │           ├── DD
+│   │           │   └── DD_Library.pex
+│   │           └── Source
+│   │               └── User
+│   │                   └── DD
+│   │                       └── DD_Library.psc
+│   └── skyrim
+│       └── plugin
+│           ├── scripts
+│           │   ├── SkyrimToyInterfacePlayerScript.pex
+│           │   └── source
+│           │       └── SkyrimToyInterfacePlayerScript.psc
+│           └── SkyrimToyInterface.esp
 ├── pattern_generator
-│...
-├── plugin
-│   ├── scripts
-│   │   ├── SkyrimToyInterfacePlayerScript.pex
-│   │   └── source
-│   │       └── SkyrimToyInterfacePlayerScript.psc
-│   └── SkyrimToyInterface.esp
+│   ├── ...
 ├── settings.py
-├── SkyrimToyInterface.py
 └── toys
     ├── ...</code></pre>
 
-            </li>
-            <li>
-                <p>Install the Skyrim mod <code>SkyrimToyInterface.esp</code> which is found in the <code>plugin</code>
-                    folder. The easiest way to install the mod is to zip the contents of the folder (both the ESP file
-                    and the <code>scripts</code> folder!) into a new ZIP archive and then load & install it through a
-                    mod manager like Nexus Mod Manager or Vortex.
-                </p>
-                <div class="alert alert-secondary">
-                    <p><strong>TIP</strong>: You can verify that the mod is running by typing
-                    <pre><code>help SkyrimToyInterfaceControllerQuest</code></pre>
-                    in the in-game console. The mod should show up as a loaded quest like this:
-                    <pre>QUST: SkyrimToyInterfaceController</pre>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <p>Enable debug tracing in your <code>papyrus.ini</code>[?] configuration file. Papyrus should have the
-                    flags <code>bEnableLogging</code> and <code>bEnableTrace</code> enabled. This allows Papyrus to
-                    output debug information into the log, which the
-                    script needs to function:</p>
-                <pre><code>[Papyrus]
+                    </li>
+                    <li>
+                        <p>Install the Skyrim mod <code>SkyrimToyInterface.esp</code> which is found in the <code>games/skyrim/plugin</code>
+                            folder. The easiest way to install the mod is to zip the contents of the folder (both the
+                            ESP file
+                            and the <code>scripts</code> folder!) into a new ZIP archive and then load & install it
+                            through a
+                            mod manager like Nexus Mod Manager or Vortex.
+                        </p>
+                        <div class="alert alert-secondary">
+                            <p><strong>TIP</strong>: You can verify that the mod is running by starting the game through
+                                your mod manager and typing
+                            <pre><code>help SkyrimToyInterfaceControllerQuest</code></pre>
+                            in the in-game console. The mod should show up as a loaded quest like this:
+                            <pre>QUST: SkyrimToyInterfaceController</pre>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Enable debug tracing in your <code>papyrus.ini</code>[?] configuration file. Papyrus should
+                            have the
+                            flags <code>bEnableLogging</code> and <code>bEnableTrace</code> enabled. This allows Papyrus
+                            to
+                            output debug information into the log, which the
+                            script needs to function:</p>
+                        <pre><code>[Papyrus]
 bEnableLogging=1
 bEnableTrace=1</code></pre>
-            </li>
-            <li>
-                <p>Open
-                    <code>settings.py</code> in an ordinary text editor (like <a
-                            href="https://notepad-plus-plus.org/">notepad++</a>
-                    or <a href="https://code.visualstudio.com/">VS Code</a>) and change the variables
-                    <code>LOG_PATH</code> and
-                    <code>CHARACTER_NAME</code> in the file:</p>
-                <pre><code>from common.constants import *
+                    </li>
+                    <li>
+                        <p>Open
+                            <code>settings.py</code> in an ordinary text editor (like <a
+                                    href="https://notepad-plus-plus.org/">notepad++</a>
+                            or <a href="https://code.visualstudio.com/">VS Code</a>) and change the variables
+                            <code>LOG_PATH</code> and
+                            <code>CHARACTER_NAME</code> in the file:</p>
+                        <pre><code>from common.constants import *
 ## Edit the following variables to configure this script
 
 # Important variables to configure for all users:
@@ -320,40 +360,60 @@ LOG_PATH = '../Documents/My Games/Skyrim VR/Logs/Script/Papyrus.0.log' # Full pa
 CHARACTER_NAME = "Min"  # The name of your character.
             </code></pre>
 
+                        <p>
+                            <code>LOG_PATH</code> Should point to the place on your hard disk where Skyrim outputs its
+                            Papyrus
+                            log file. The precise file path depends on your particular Skyrim installation, but for most
+                            installations the log can usually be found in
+                        <pre>C:/Users/YOUR_WINDOWS_ACCOUNT_NAME/Documents/My Games/Skyrim/Logs/Script/Papyrus.0.log</pre>
+                        </p>
+                        <p>
+                            <code>CHARACTER_NAME</code> must correspond to the name of your in-game character.
+                            This
+                            ensures that the script can parse the correct information from the log file.
+                        </p>
+                        <p class="alert alert-warning"><strong>Caution:</strong> <code>settings.py</code> is a PY
+                            (python
+                            script) file. Make sure your
+                            text editor does not save it as a TXT file like <code>settings.py.txt</code>!</p>
+                    </li>
+                </ol>
+
+
+            </div>
+            <!-- Skyrim SE/AE/VR -->
+            <div class="content container container-lg" id="game_content2">
                 <p>
-                    <code>LOG_PATH</code> Should point to the place on your hard disk where Skyrim outputs its
-                    Papyrus
-                    log file. The precise file path depends on your particular Skyrim installation, but for most
-                    installations the log can usually be found in
-                <pre>C:/Users/YOUR_WINDOWS_ACCOUNT_NAME/Documents/My Games/Skyrim/Logs/Script/Papyrus.0.log</pre>
+                    <span class="badge warning">todo</span>
+                    Skyrim Special Edition, Anniversary Edition, VR Edition
                 </p>
+            </div>
+            <!-- Fallout 4-->
+            <div class="content container container-lg" id="game_content3">
                 <p>
-                    <code>CHARACTER_NAME</code> must correspond to the name of your in-game character.
-                    This
-                    ensures that the script can parse the correct information from the log file.
+                    <span class="badge warning">todo</span>
+                    Fallout 4
                 </p>
-                <p class="alert alert-warning"><strong>Caution:</strong> <code>settings.py</code> is a PY (python
-                    script) file. Make sure your
-                    text editor does not save it as a TXT file like <code>settings.py.txt</code>!</p>
-            </li>
-        </ol>
+            </div>
+        </div>
 
-        <p>The following steps depend on your own particular toy or use-case. Please choose below.</p>
 
-        <div class="row flex-spaces tabs">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1">Buttplug.io</label>
+        <p class="text-center margin-top-large"><strong>Choose your integration:</strong></p>
 
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2">Lovense</label>
+        <div class="row flex-spaces integration_tabs">
+            <input id="int_tab1" type="radio" name="integration_tabs" checked>
+            <label for="int_tab1">Buttplug.io</label>
 
-            <input id="tab3" type="radio" name="tabs">
-            <label for="tab3">Chaster</label>
+            <input id="int_tab2" type="radio" name="integration_tabs">
+            <label for="int_tab2">Lovense</label>
 
-            <input id="tab4" type="radio" name="tabs">
-            <label for="tab4">DG-Lab Coyote</label>
+            <input id="int_tab3" type="radio" name="integration_tabs">
+            <label for="int_tab3">Chaster</label>
 
-            <div class="content" id="content1">
+            <input id="int_tab4" type="radio" name="integration_tabs">
+            <label for="int_tab4">DG-Lab Coyote</label>
+
+            <div class="content container container-lg" id="int_content1">
                 <p>
                     <span class="badge warning">todo</span>
                 </p>
@@ -386,7 +446,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     </li>
                     <li>
                         <p>
-                            Run the Game Interface For Toys script by opening a command line terminal, changing directory
+                            Run the main script by opening a command line terminal, changing directory
                             to where you saved the script and running the main script directly through the python
                             interpreter:
                         <pre><code>python SkyrimToyInterface.py</code></pre>
@@ -398,22 +458,23 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     </li>
                     <li>
                         <p>
-                            Now you're all set! Leave the script running and start Skyrim through your mod manager as usual.
+                            Now you're all set! Leave the script running and start Skyrim through your mod manager as
+                            usual.
                         </p>
                     </li>
                 </ol>
             </div>
-            <div class="content" id="content2">
+            <div class="content container container-lg" id="int_content2">
                 <p>
                     <span class="badge warning">todo</span> [Lovense] This section hasn't been written yet, sorry!
                 </p>
             </div>
-            <div class="content" id="content3">
+            <div class="content container container-lg" id="int_content3">
                 <p>
                     <span class="badge warning">todo</span> [Chaster] This section hasn't been written yet, sorry!
                 </p>
             </div>
-            <div class="content" id="content4">
+            <div class="content container container-lg" id="int_content4">
                 <p class="alert alert-warning"><strong>Warning:</strong> All the usual caveats and disclaimers apply
                     when using electric stimulation. <strong>The creators of this software disavow any liability
                         stemming from the use of this software in conjunction with e-stim devices.</strong> E-stim
@@ -428,7 +489,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     device and save it in Class ToyInterface. This could/should probably be a separate variable in
                     settings.py?</em></p>
                 <p><span class="badge warning">todo</span> <em>How to set min and max intensity values</em></p>
-                <p><span class="badge warning">todo</span> <em>How to know if Game Interface For Toys has connected to the
+                <p><span class="badge warning">todo</span> <em>How to know if <strong>GIFT</strong> has connected to the
                     device</em></p>
                 <p><span class="badge warning">todo</span> <em>How to test connectivity without committing to being
                     e-stimmed</em></p>
@@ -451,9 +512,11 @@ TOY_TYPE = [TOY_BUTTPLUG]
 <br>
 
 <div class="container">
-    <p class="text-center">This page is maintained by <a href="https://github.com/inertaert/">@inertaert</a>. Help  <a href="https://github.com/inertaert/sti-guide">improve it!</a>
-        </p>
-    </div>
+    <p class="text-center">Is the information out of date? Found an error? Can you draw a
+        sexier Dragonborn?<br><a
+                href="https://github.com/inertaert/sti-guide">Please help us improve this page on GitHub!</a> 👈
+    </p>
+</div>
 </div>
 
 </body>
