@@ -4,7 +4,8 @@
   Global PaperCSS Config
 */
 html {
-  --primary: #41403e;
+  /*--primary: #41403e;*/
+  --primary: black;
   --secondary: #0071de;
   --success: #86a361;
   --warning: #ddcd45;
@@ -43,7 +44,8 @@ html {
   --main-background: white;
   --main-background-light: white;
   --black: black;
-  --primary-text: #272625;
+  --primary-text: black;
+  /*--primary-text: #272625;*/
   --secondary-text: #0057ab;
   --success-text: #6c844d;
   --warning-text: #cab925;
