@@ -181,16 +181,12 @@
             </li>
         </ul>
 
-        <h3 id="download" class="margin-bottom-small">Download</h3>
-        <p>GIFT can be downloaded from <a
-                href="https://github.com/MinLL/SkyrimToyInterface">GitHub</a> [<a
-                href="https://github.com/MinLL/SkyrimToyInterface/archive/refs/heads/master.zip">direct download</a>]
-            or <a
-                    href="https://www.loverslab.com/topic/191448-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">LoversLab</a>.
-        </p>
+        <h3 id="getting_started" class="margin-bottom-small">Getting started</h3>
 
-
-        <p class="alert alert-danger _alert_paper_border">GIFT is in an alpha stage. Features may not work, or work poorly.
+        <!--        <p>Installation of <strong>GIFT</strong> will become much-->
+        <!--            simpler in future versions, we promise.</p>-->
+        <p class="alert alert-danger _alert_paper_border">GIFT is in an alpha stage. Features may not work, or work
+            poorly.
         </p>
 
         <p class="alert alert-secondary _alert_paper_border">Help us add support for your favourite device or mod on
@@ -201,16 +197,11 @@
             forum!
         </p>
 
-        <h3 id="getting_started" class="margin-bottom-small">Getting started</h3>
-
-<!--        <p>Installation of <strong>GIFT</strong> will become much-->
-<!--            simpler in future versions, we promise.</p>-->
-
         <p class="text-center margin-top-large"><strong>Choose your game:</strong></p>
 
         <div class="row flex-spaces game_tabs">
             <input id="game_tab1" type="radio" name="game_tabs" checked>
-            <label for="game_tab1">Skyrim (LE)</label>
+            <label for="game_tab1">The Elder Scrolls 5: Skyrim</label>
 
             <!--            <input id="game_tab2" type="radio" name="game_tabs">-->
             <!--            <label for="game_tab2">Skyrim (SE, AE, VR)</label>-->
@@ -223,7 +214,9 @@
             <div class="content container container-lg" id="game_content1">
                 <h4>Skyrim LE, SE, AE, VR</h4>
 
-                <p class="alert alert-warning _alert_paper_border">You need to have the <strong>PapyrusUtil SKSE</strong> plugin for your particular version of Skyrim installed. Sexlab and Devious Devices are optional, but recommended.</p>
+                <p class="alert alert-warning _alert_paper_border">You need to have the <strong>PapyrusUtil
+                    SKSE</strong> plugin for your particular version of Skyrim installed. Sexlab and Devious Devices are
+                    optional, but recommended.</p>
 
                 <ol>
                     <li>
@@ -317,10 +310,9 @@ CHARACTER_NAME = "Min"  # The name of your character.
                             <code>LOG_PATH</code> Should point to the place on your hard disk where Skyrim outputs its
                             Papyrus
                             log file. The precise file path depends on your particular Skyrim installation, but for most
-                            installations the log can usually be found in
-                            </p>
-                        <pre>C:/Users/YOUR_WINDOWS_ACCOUNT_NAME/Documents/My Games/Skyrim/Logs/Script/Papyrus.0.log</pre>
-
+                            installations the log can usually be found here:
+                        </p>
+                        <pre>LOG_PATH = 'C:/Users/YOUR_WINDOWS_ACCOUNT_NAME/Documents/My Games/Skyrim/Logs/Script/Papyrus.0.log'</pre>
                         <p>
                             <code>CHARACTER_NAME</code> must correspond to the name of your in-game character.
                             This
@@ -363,9 +355,11 @@ CHARACTER_NAME = "Min"  # The name of your character.
                     <li>
                         <p>
                             Set the variable <code>TOY_TYPE</code> equal to <code>[TOY_BUTTPLUG]</code> under the Toy
-                            configuration section in <code>settings.py</code>:</p> <pre><code># Toy configuration
+                            configuration section in <code>settings.py</code>:</p>
+                        <pre><code># Toy configuration
 TOY_TYPE = [TOY_BUTTPLUG]
-…</code></pre><p>and save the file.
+…</code></pre>
+                        <p>and save the file.
                         </p>
                     </li>
                     <li>
@@ -415,7 +409,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
             </div>
             <div class="content container container-lg" id="int_content3">
                 <h4>
-                   Chaster
+                    Chaster
                 </h4>
                 <p>This section hasn't been written yet, sorry!</p>
             </div>
@@ -423,7 +417,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 <h4>
                     DG-Lab Coyote
                 </h4>
-                <p class="alert alert-warning"><strong>Warning:</strong> All the usual caveats and disclaimers apply
+                <p class="alert alert-danger"><strong>Warning:</strong> All the usual caveats and disclaimers apply
                     when using electric stimulation. <strong>The creators of this software disavow any liability
                         stemming from the use of this software in conjunction with e-stim devices.</strong> E-stim
                     beginners are strongly urged to inform themselves through reputable channels, such as the <a
@@ -447,9 +441,11 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     <li>
                         <p>
                             Set the variable <code>TOY_TYPE</code> equal to <code>[TOY_COYOTE]</code> under the Toy
-                            configuration section in <code>settings.py</code>:</p> <pre><code># Toy configuration
-TOY_TYPE = [TOY_BUTTPLUG]
-…</code></pre><p>and save the file.
+                            configuration section in <code>settings.py</code>:</p>
+                        <pre><code># Toy configuration
+TOY_TYPE = [TOY_COYOTE]
+…</code></pre>
+                        <p>and save the file.
                         </p>
                     </li>
                 </ol>
@@ -473,7 +469,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 here.</a>
         </p>
 
-        <h4 id="system_requirements" class="margin-bottom-small">System requirements</h4>
+        <h4 id="system_requirements" class="margin-bottom-small">System requirements <span class="badge warning">todo rewrite</span></h4>
         <ul>
             <li>
                 <p>
@@ -519,6 +515,15 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 </p>
             </li>
         </ul>
+
+        <h3 id="download" class="margin-bottom-small">Download</h3>
+        <p>GIFT can be downloaded from <a
+                href="https://github.com/MinLL/SkyrimToyInterface">GitHub</a> [<a
+                href="https://github.com/MinLL/SkyrimToyInterface/archive/refs/heads/master.zip">direct download</a>]
+            or <a
+                    href="https://www.loverslab.com/topic/191448-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">LoversLab</a>.
+        </p>
+
 
     </article>
 </div>
