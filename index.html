@@ -513,9 +513,8 @@ bEnableLogging=1
 bEnableTrace=1</code></pre>
                     </li>
                     <li>
-                        <p>Open the mod's
-                            <code>settings.py</code> file in an ordinary text editor (like <a
-                                    href="https://notepad-plus-plus.org/">notepad++</a>
+                        <p>Open <code>settings.py</code> file in an ordinary text editor (like <a
+                                href="https://notepad-plus-plus.org/">notepad++</a>
                             or <a href="https://code.visualstudio.com/">VS Code</a>) and change the variables
                             <code>LOG_PATH</code> and
                             <code>CHARACTER_NAME</code> in the file:</p>
@@ -551,7 +550,7 @@ CHARACTER_NAME = "Min"  # The name of your character.
                 <ol>
                     <li>
                         <div>
-                            <p>Install the following prerequisite mods:</p>
+                            <p>Install the following mods:</p>
                             <ul>
                                 <li>
                                     <p>
@@ -633,9 +632,8 @@ CHARACTER_NAME = "Min"  # The name of your character.
                         <p>Enable debug tracing <span class="badge warning">?</span>
                     </li>
                     <li>
-                        <p>Open the mod's
-                            <code>settings.py</code> file in an ordinary text editor (like <a
-                                    href="https://notepad-plus-plus.org/">notepad++</a>
+                        <p>Open <code>settings.py</code> file in an ordinary text editor (like <a
+                                href="https://notepad-plus-plus.org/">notepad++</a>
                             or <a href="https://code.visualstudio.com/">VS Code</a>) and change the variables
                             <code>LOG_PATH</code> and
                             <code>CHARACTER_NAME</code> in the file:</p>
@@ -729,7 +727,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     <li>
                         <p>
                             Run the main script by opening a window command line terminal, changing directory
-                            to where you saved the script and running the main script directly through the python
+                            to where you saved the script, and running the main script directly through the python
                             interpreter:
                         </p>
                         <pre><code>python GameToyInterface.py</code></pre>
@@ -754,6 +752,21 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 <p>
                     This section hasn't been written yet, sorry!
                 </p>
+                <ol>
+                    <li>
+                        <p>
+                            Install the <code>requests</code> python package with <code>pip</code>, the Python
+                            package installer. Type the following in your windows command line terminal:</p>
+                        <pre><code>python -m pip install requests</code></pre>
+                        <p>
+                            This will enable the script to talk to the Lovense web API.
+                        </p>
+                        <p>
+                            <span class="badge warning">todo</span> <em>info about python virtual environments and best
+                            practices for installing packages.</em>
+                        </p>
+                    </li>
+                </ol>
             </div>
             <!--Chaster-->
             <div class="content container container-lg" id="int_content3">
@@ -761,6 +774,21 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     Chaster
                 </h4>
                 <p>This section hasn't been written yet, sorry!</p>
+                <ol>
+                    <li>
+                        <p>
+                            Install the <code>requests</code> python package with <code>pip</code>, the Python
+                            package installer. Type the following in your windows command line terminal:</p>
+                        <pre><code>python -m pip install requests</code></pre>
+                        <p>
+                            This will enable the script to talk directly with Chaster over the web.
+                        </p>
+                        <p>
+                            <span class="badge warning">todo</span> <em>info about python virtual environments and best
+                            practices for installing packages.</em>
+                        </p>
+                    </li>
+                </ol>
             </div>
             <!--DG-Lab Coyote-->
             <div class="content container container-lg" id="int_content4">
@@ -799,11 +827,22 @@ TOY_TYPE = [TOY_COYOTE]
                         <p>and save the file.
                         </p>
                     </li>
+                    <li>
+                        <p>
+                            Install the <code>bleak</code> python package with <code>pip</code>, the Python
+                            package installer. Type the following in your windows command line terminal:</p>
+                        <pre><code>python -m pip install bleak</code></pre>
+                        <p>
+                            This will enable the script to talk directly to the DG-Lab Coyote device over Bluetooth.
+                        </p>
+                        <p>
+                            <span class="badge warning">todo</span> <em>info about python virtual environments and best
+                            practices for installing packages.</em>
+                        </p>
+                    </li>
                 </ol>
-
             </div>
         </div>
-
 
         <h3 class="margin-bottom-small"><span class="badge warning">todo</span>FAQ</h3>
         <p>Q: Why does my vibrator keep turning off and on every second when in-game?</p>
