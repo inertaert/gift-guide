@@ -116,7 +116,8 @@
     <article>
         <h2 class="margin-bottom-small margin-top-none">Overview</h2>
         <!-- todo -->
-        <p>GIFT (<em>Game Interface For Toys</em>) is a program written in Python that allows sex toys to react to events that happen in-game in Skyrim or Fallout
+        <p>GIFT (<em>Game Interface For Toys</em>) is a program written in Python that allows sex toys to react to
+            events that happen in-game in Skyrim or Fallout
             4. It currently
             supports the
             following games:</p>
@@ -533,7 +534,8 @@ CHARACTER_NAME = "Min"  # The name of your character.
                         </p>
                         <pre>LOG_PATH = 'C:/Users/YOUR_WINDOWS_ACCOUNT_NAME/Documents/My Games/Skyrim/Logs/Script/Papyrus.0.log'</pre>
                         <p>
-                            <code>CHARACTER_NAME</code> must correspond to the name of your in-game character, which is "Prisoner" by default.
+                            <code>CHARACTER_NAME</code> must correspond to the name of your in-game character, which is
+                            "Prisoner" by default.
                             This
                             ensures that the script can parse the correct information from the log file.
                         </p>
@@ -671,7 +673,7 @@ CHARACTER_NAME = "Min"  # The name of your character.
         <p class="text-center margin-top-large"><strong>Choose your integration:</strong></p>
 
         <div class="row flex-spaces integration_tabs">
-            <input id="int_tab1" type="radio" name="integration_tabs" checked>
+            <input id="int_tab1" type="radio" name="integration_tabs">
             <label for="int_tab1">Buttplug.io</label>
 
             <input id="int_tab2" type="radio" name="integration_tabs">
@@ -680,7 +682,7 @@ CHARACTER_NAME = "Min"  # The name of your character.
             <input id="int_tab3" type="radio" name="integration_tabs">
             <label for="int_tab3">Chaster</label>
 
-            <input id="int_tab4" type="radio" name="integration_tabs">
+            <input id="int_tab4" type="radio" name="integration_tabs" checked>
             <label for="int_tab4">DG-Lab Coyote</label>
 
             <!--Buttplug.io-->
@@ -802,7 +804,10 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 <h3>
                     DG-Lab Coyote
                 </h3>
-                <p>This section hasn't been written yet, sorry!</p>
+                <p>This section may not be complete.</p>
+                <p class="alert alert-warning">You need a PC with <strong>Bluetooth 4.0+/"Bluetooth Low Energy"</strong>
+                    connectivity to connect with the DG-Lab Coyote. An ordinary Bluetooth USB dongle also works for PCs
+                    without built-in Bluetooth connectivity.</p>
                 <p class="alert alert-danger"><strong>Warning:</strong> All the usual caveats and disclaimers apply
                     when using electric stimulation. <strong>The creators of this software disavow any liability
                         stemming from the use of this software in conjunction with e-stim devices.</strong> E-stim
@@ -810,9 +815,6 @@ TOY_TYPE = [TOY_BUTTPLUG]
                             href="https://www.sexmachinereviews.co.uk/advice/beginners-guides/beginners-guide-to-e-stim-and-electrosex.html">Beginner's
                         Guide to Electrosex</a> by <a href="https://www.sexmachinereviews.co.uk">Sex
                         Machine Reviews</a>, before use.</p>
-
-                <p>Support for the DG-Lab Coyote is at a very early stage.</p>
-
                 <p><span class="badge warning">todo</span> <em>How to find the proper Bluetooth ID for the DG-Lab Coyote
                     device and save it in Class ToyInterface. This could/should probably be a separate variable in
                     settings.py?</em></p>
@@ -822,7 +824,6 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 <p><span class="badge warning">todo</span> <em>How to test connectivity without committing to being
                     e-stimmed</em></p>
                 <p><span class="badge warning">todo</span> <em>Where to ... put the electrodes?</em></p>
-
                 <ol>
                     <li>
                         <p>
@@ -831,8 +832,54 @@ TOY_TYPE = [TOY_BUTTPLUG]
                         <pre><code># Toy configuration
 TOY_TYPE = [TOY_COYOTE]
 …</code></pre>
-                        <p>and save the file.
-                        </p>
+                    </li>
+                    <li>
+                        <p>Enter your DG-Lab Coyote's Bluetooth <abbr title="Unique Identity">UID</abbr> for the
+                            variable <code>COYOTE_UID</code> in <code>settings.py</code> and save the file. The script
+                            needs this UID to
+                            connect with it:</p>
+
+                        <pre><code># Configuration if using DG-Lab Coyote:
+COYOTE_UID = "C1:A9:D8:0C:CB:1D"  # Set to the Bluetooth UID for your particular Coyote device</code></pre>
+                        <div class="alert alert-secondary">
+                            <p class="margin-none"><strong>TIP:</strong>
+                                A Bluetooth UID is a unique 12 digit
+                                alphanumeric code (e. g. <code>C1:A9:D8:0C:CB:1D</code>). If you do not know your
+                                Coyote's UID code, do the following:
+                            </p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        Turn on the DG-Lab Coyote and connect to it in Windows' own bluetooth connection
+                                        setup screen.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        After connecting to it, find the device in your "devices and printers" folder in
+                                        the Windows control panel.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Right click on it and select properties.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Find and click the last tab in the row, and down at the bottom you should find
+                                        the device's MAC address/UID.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Don't forget to disconnect the device again afterwards, otherwise Windows' own
+                                        Bluetooth connection to the device will interfere with GIFT's ability to connect
+                                        to it!
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
                     </li>
                     <li>
                         <p>
@@ -845,6 +892,24 @@ TOY_TYPE = [TOY_COYOTE]
                         <p>
                             <span class="badge warning">todo</span> <em>info about python virtual environments and best
                             practices for installing packages.</em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Run the main script by opening a window command line terminal, changing directory
+                            to where you saved the script, and running the main script directly through the python
+                            interpreter:
+                        </p>
+                        <pre><code>python GameToyInterface.py</code></pre>
+                        <p><span class="badge warning">todo</span>
+                            <em>How does the user know that the script is running successfully? A lack of error
+                                message?</em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Now you're all set! Leave the script running and start Skyrim through your mod manager as
+                            usual.
                         </p>
                     </li>
                 </ol>
