@@ -8,7 +8,7 @@
           content="Game Interface For Toys (GIFT) connects your real-life IoT sex toys with your PC and activates them automatically during gameplay in Skyrim and Fallout 4.">
     <link rel="stylesheet" href="css/paper.min.css">
     <link rel="stylesheet" href="css/custom.min.css">
-    <title>Game Interface For Toys—Skyrim/Fallout 4 meets teledildonics</title>
+    <title>Game Interface For Toys—Skyrim & Fallout 4 meet teledildonics</title>
 </head>
 
 <body>
@@ -18,9 +18,7 @@
 
 <div id="summary" class="paper container">
     <article class="article">
-        <h1 class="margin-top-none margin-bottom-none">Game Interface For Toys
-        </h1>
-        <p><strong><abbr title="Game Interface For Toys">GIFT</abbr></strong> by <a
+        <p><strong>Game Interface For Toys</strong> (aka. <abbr title="Game Interface For Toys">GIFT</abbr>) by <a
                 href="https://www.loverslab.com/topic/191448-skyrim-irl-toy-chastity-interface-le-se-ae-vr/">Min</a>
             connects your real-life <abbr title="Internet of Things">IoT</abbr> sex
             toys with your
@@ -100,7 +98,8 @@
             </div>
         </div>
         <p class="border border-6 shadow shadow-hover padding-large margin-left-large margin-right-large margin-top-none margin-bottom-large _white_background">
-            <strong>GIFT</strong> speaks fluent <a href="https://www.chaster.app">Chaster</a>. Raid
+            <abbr title="Game Interface For Toys">GIFT</abbr> speaks fluent <a
+                href="https://www.chaster.app">Chaster</a>. Raid
             dungeons
             to reduce or
             extend your
@@ -116,7 +115,8 @@
     <article>
         <h2 class="margin-bottom-small margin-top-none">Overview</h2>
         <!-- todo -->
-        <p>GIFT (<em>Game Interface For Toys</em>) is a program written in Python that allows sex toys to react to
+        <p><abbr title="Game Interface For Toys">GIFT</abbr> is a program written in Python that allows sex toys to
+            react to
             events that happen in-game in Skyrim or Fallout
             4. It currently
             supports the
@@ -802,7 +802,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 <h3>
                     DG-Lab Coyote
                 </h3>
-                <p>This section may not be complete.</p>
+                <p>This section is not complete.</p>
                 <p class="alert alert-warning">You need a PC with <strong>Bluetooth 4.0+/"Bluetooth Low Energy"</strong>
                     connectivity to connect with the DG-Lab Coyote. An ordinary Bluetooth USB dongle also works for PCs
                     without built-in Bluetooth connectivity.</p>
@@ -816,12 +816,11 @@ TOY_TYPE = [TOY_BUTTPLUG]
                 <p><span class="badge warning">todo</span> <em>How to find the proper Bluetooth ID for the DG-Lab Coyote
                     device and save it in Class ToyInterface. This could/should probably be a separate variable in
                     settings.py?</em></p>
-                <p><span class="badge warning">todo</span> <em>How to set min and max intensity values</em></p>
-                <p><span class="badge warning">todo</span> <em>How to know if <strong>GIFT</strong> has connected to the
-                    device</em></p>
+                <p><span class="badge warning">todo</span> <em>How to set min and max intensity values?</em></p>
+                <p><span class="badge warning">todo</span> <em>How to know if GIFT has connected to the
+                    device?</em></p>
                 <p><span class="badge warning">todo</span> <em>How to test connectivity without committing to being
                     e-stimmed</em></p>
-                <p><span class="badge warning">todo</span> <em>Where to ... put the electrodes?</em></p>
                 <ol>
                     <li>
                         <p>
@@ -906,7 +905,10 @@ COYOTE_UID = "C1:A9:D8:0C:CB:1D"  # Set to the Bluetooth UID for your particular
                     </li>
                     <li>
                         <p>
-                            Now you're all set! Leave the script running and start Skyrim through your mod manager as
+                            Now you're all set! As you execute the script, it should connect automatically to your
+                            DG-Lab Coyote device. This may take several seconds. On success you should see its front
+                            LEDs turn into a constant white to indicate a Bluetooth connection. Leave the script running
+                            and start Skyrim through your mod manager as
                             usual.
                         </p>
                     </li>
