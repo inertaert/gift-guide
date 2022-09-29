@@ -192,11 +192,11 @@
                     is supported)
                 </p>
             </li>
-            <li>
-                <p>
-                    <a href="https://www.chaster.app">Chaster</a>
-                </p>
-            </li>
+            <!--            <li>-->
+            <!--                <p>-->
+            <!--                    <a href="https://www.chaster.app">Chaster</a>-->
+            <!--                </p>-->
+            <!--            </li>-->
             <li>
                 <p>
                     <a href="https://www.dungeon-lab.com">DG-Lab Coyote</a>
@@ -214,30 +214,35 @@
             reacts to them in almost
             real-time.</p>
 
-        <p>The script also supports <a href="https://www.chaster.app">Chaster</a>, the keyholding and chastity platform.
-            The current implementation requires a developer token (You can apply for this on Chaster), and it allows you
-            to:</p>
-        <ul>
-            <li>
-                Add time to a lock.
-            </li>
-            <li>
-                Assign a task to the user of the lock (Task Extension)
-            </li>
-            <li>
-                Roll the dice (Dice Extension)
-            </li>
-            <li>
-                Spin the wheel of fortune (Wheel of fortune extension).
-            </li>
-        </ul>
+        <div class="">
+            <p>The script also supports <a href="https://www.chaster.app">Chaster</a>, the keyholding and chastity
+                platform.
+                The current implementation requires a developer token (you can apply for this on Chaster), and it allows
+                you
+                to:</p>
+            <ul>
+                <li>
+                    Add time to a lock.
+                </li>
+                <li>
+                    Assign a task to the user of the lock (Task Extension)
+                </li>
+                <li>
+                    Roll the dice (Dice Extension)
+                </li>
+                <li>
+                    Spin the wheel of fortune (Wheel of fortune extension).
+                </li>
+            </ul>
 
-        <p>
-            If using Chaster, the script spins the wheel when your character is knocked down via Defeat. When the whole
-            party is defeated, adds a configurable amount of time to your lock. If using e-stim, applies a mild shock
-            when hit, scaling in intensity as more damage is taken.
-        </p>
-
+            <p>
+                If using Chaster, the script spins the wheel when your character is knocked down via Defeat. When the
+                whole
+                party is defeated, adds a configurable amount of time to your lock. If using e-stim, applies a mild
+                shock
+                when hit, scaling in intensity as more damage is taken.
+            </p>
+        </div>
 
         <p>For a full overview of the latest supported features and devices, visit the main mod page: <a
                 href="https://www.loverslab.com/files/file/22380-gift-game-interface-for-toys-skyrim-le-se-ae-vr-fallout-4/">https://www.loverslab.com/files/file/22380-gift-game-interface-for-toys-skyrim-le-se-ae-vr-fallout-4/</a>
@@ -248,25 +253,26 @@
         <p class="alert alert-secondary">Game Interface For Toys is modular, so you only need to fulfill the system
             requirements for your particular
             game and use case. See the "getting started" section below for more details!</p>
+        <h4 class="margin-bottom-none">Software</h4>
         <ul>
             <li>
                 <p>Python 3.7 or later</p>
                 <ul>
                     <li>
                         <p>
-                        requests
-                        <!--lovense, chaster-->
+                            requests
+                            <!--lovense, chaster-->
                         </p>
                     </li>
                     <li>
                         <p>
-                        buttplug-py
+                            buttplug-py
                         </p>
                     </li>
                     <li>
                         <p>
                             <!--(dg-lab coyote)-->
-                        bleak
+                            bleak
                         </p>
                     </li>
                 </ul>
@@ -326,15 +332,9 @@
                     </li>
                 </ul>
             </li>
-
             <li>
                 <p>
-                    Lovense Bluetooth adapter for PC
-                </p>
-            </li>
-            <li>
-                <p>
-                    Intiface Desktop for Buttplug.io
+                    <a href="https://intiface.com/desktop/">Intiface Desktop</a> for Buttplug.io integration
                 </p>
             </li>
             <li>
@@ -342,9 +342,23 @@
                     Chaster account with developer token
                 </p>
             </li>
+        </ul>
+        <h4 class="margin-bottom-none">Hardware</h4>
+        <ul>
+            <li>
+                <p>
+                    Lovense Bluetooth adapter for PC
+                </p>
+            </li>
             <li>
                 <p>
                     Bluetooth 4.0+/"Bluetooth Low Energy" USB Dongle (DG-Lab Coyote)
+                </p>
+            </li>
+            <li>
+                <p>
+                    In addition, whatever you might need to connect your toy with Buttplug.io according to <a
+                        href="https://iostindex.com">https://iostindex.com</a>.
                 </p>
             </li>
         </ul>
@@ -680,9 +694,23 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     </li>
                     <li>
                         <p>
+                            Install the <code>buttplug-py</code> python package with <code>pip</code>, the Python
+                            package installer. Type the following in your windows command line terminal:
+                        <pre><code>python -m pip install buttplug-py</code></pre>
+                        </p>
+                        <p>
+                            This will enable the script to talk directly with Intiface Desktop, which we will install
+                            next.
+                        </p>
+                        <p>
+                            <span class="badge warning">todo</span> <em>info about python virtual environments and best
+                            practices for installing packages.</em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
                             Head to <a href="https://intiface.com/desktop/">https://intiface.com/desktop/</a> and
-                            download and install the latest version of <strong>Intiface Desktop</strong> (Windows 10 or
-                            11, Linux and MacOS only).
+                            download and install the latest version of <strong>Intiface Desktop</strong>.
                         </p>
                     </li>
                     <li>
@@ -697,7 +725,7 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     </li>
                     <li>
                         <p>
-                            Run the main script by opening a command line terminal, changing directory
+                            Run the main script by opening a window command line terminal, changing directory
                             to where you saved the script and running the main script directly through the python
                             interpreter:
                         <pre><code>python GameToyInterface.py</code></pre>
