@@ -116,7 +116,7 @@
     <article>
         <h3 class="margin-bottom-small margin-top-none">Overview</h3>
         <!-- todo -->
-        <p>This python script allows sex toys to react to events that happen in-game in in Skyrim or Fallout
+        <p>This python script allows sex toys to react to events that happen in-game in Skyrim or Fallout
             4. It currently
             supports the
             following games:</p>
@@ -256,23 +256,23 @@
         <h4 class="margin-bottom-none">Software</h4>
         <ul>
             <li>
-                <p>Python 3.7 or later</p>
+                <p><a href="https://www.python.org">Python 3.7 or later</a></p>
                 <ul>
                     <li>
                         <p>
-                            requests
+                            <a href="https://pypi.org/project/requests/">requests</a>
                             <!--lovense, chaster-->
                         </p>
                     </li>
                     <li>
                         <p>
-                            buttplug-py
+                            <a href="https://pypi.org/project/buttplug-py/">buttplug-py</a>
                         </p>
                     </li>
                     <li>
                         <p>
                             <!--(dg-lab coyote)-->
-                            bleak
+                            <a href="https://pypi.org/project/bleak/">bleak</a>
                         </p>
                     </li>
                 </ul>
@@ -334,12 +334,13 @@
             </li>
             <li>
                 <p>
-                    <a href="https://intiface.com/desktop/">Intiface Desktop</a> for Buttplug.io integration
+                    <a href="https://intiface.com/desktop/">Intiface Desktop</a> for <a href="https://buttplug.io">Buttplug.io</a>
+                    integration
                 </p>
             </li>
             <li>
                 <p>
-                    Chaster account with developer token
+                    <a href="https://www.chaster.app">Chaster</a> account with developer token
                 </p>
             </li>
         </ul>
@@ -347,12 +348,13 @@
         <ul>
             <li>
                 <p>
-                    Lovense Bluetooth adapter for PC
+                    <a href="https://www.lovense.com">Lovense</a> Bluetooth adapter for PC
                 </p>
             </li>
             <li>
                 <p>
-                    Bluetooth 4.0+/"Bluetooth Low Energy" USB Dongle (DG-Lab Coyote)
+                    Bluetooth 4.0+/"Bluetooth Low Energy" USB Dongle for the <a href="https://www.dungeon-lab.com">DG-Lab
+                    Coyote</a>
                 </p>
             </li>
             <li>
@@ -403,7 +405,7 @@
                 <ol>
                     <li>
                         <div>
-                            <p>Install the following prerequisite mods:</p>
+                            <p>Install the following mods:</p>
                             <ul>
                                 <li>
                                     <p>
@@ -489,10 +491,12 @@
                         <div class="alert alert-secondary">
                             <p><strong>TIP</strong>: You can verify that the mod is running by starting the game through
                                 your mod manager and typing
-                            <pre><code>help SkyrimToyInterfaceControllerQuest</code></pre>
-                            in the in-game console. The mod should show up as a loaded quest like this:
-                            <pre>QUST: SkyrimToyInterfaceController</pre>
                             </p>
+                            <pre><code>help SkyrimToyInterfaceControllerQuest</code></pre>
+                            <p>
+                                in the in-game console. The mod should show up as a loaded quest like this:
+                            </p>
+                            <pre>QUST: SkyrimToyInterfaceController</pre>
                         </div>
                     </li>
                     <li>
@@ -509,8 +513,8 @@ bEnableLogging=1
 bEnableTrace=1</code></pre>
                     </li>
                     <li>
-                        <p>Open
-                            <code>settings.py</code> in an ordinary text editor (like <a
+                        <p>Open the mod's
+                            <code>settings.py</code> file in an ordinary text editor (like <a
                                     href="https://notepad-plus-plus.org/">notepad++</a>
                             or <a href="https://code.visualstudio.com/">VS Code</a>) and change the variables
                             <code>LOG_PATH</code> and
@@ -629,8 +633,8 @@ CHARACTER_NAME = "Min"  # The name of your character.
                         <p>Enable debug tracing <span class="badge warning">?</span>
                     </li>
                     <li>
-                        <p>Open
-                            <code>settings.py</code> in an ordinary text editor (like <a
+                        <p>Open the mod's
+                            <code>settings.py</code> file in an ordinary text editor (like <a
                                     href="https://notepad-plus-plus.org/">notepad++</a>
                             or <a href="https://code.visualstudio.com/">VS Code</a>) and change the variables
                             <code>LOG_PATH</code> and
@@ -695,9 +699,8 @@ TOY_TYPE = [TOY_BUTTPLUG]
                     <li>
                         <p>
                             Install the <code>buttplug-py</code> python package with <code>pip</code>, the Python
-                            package installer. Type the following in your windows command line terminal:
+                            package installer. Type the following in your windows command line terminal:</p>
                         <pre><code>python -m pip install buttplug-py</code></pre>
-                        </p>
                         <p>
                             This will enable the script to talk directly with Intiface Desktop, which we will install
                             next.
@@ -728,8 +731,8 @@ TOY_TYPE = [TOY_BUTTPLUG]
                             Run the main script by opening a window command line terminal, changing directory
                             to where you saved the script and running the main script directly through the python
                             interpreter:
-                        <pre><code>python GameToyInterface.py</code></pre>
                         </p>
+                        <pre><code>python GameToyInterface.py</code></pre>
                         <p><span class="badge warning">todo</span>
                             <em>How does the user know that the script is running successfully? A lack of error
                                 message?</em>
@@ -827,7 +830,6 @@ TOY_TYPE = [TOY_COYOTE]
         sexier Dragonborn?<br><a
                 href="https://github.com/inertaert/sti-guide">Please help us improve this page on GitHub!</a>
     </p>
-</div>
 </div>
 
 </body>
